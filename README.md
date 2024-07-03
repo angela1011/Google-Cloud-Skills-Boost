@@ -1,6 +1,6 @@
-# Get-Started-with-Dataplex
+# Google Cloud Skills Boost
 
-Earn a skill badge by completing the Get Started with Dataplex quest, where you use Dataplex to start creating a data mesh on Google Cloud.
+Earn a skill badge by completing the courses.
 
 A skill badge is an exclusive digital badge issued by Google Cloud in recognition of your proficiency with Google Cloud products and services and tests your ability to apply your knowledge in an interactive hands-on environment. Complete this Skill Badge, and the final assessment challenge lab, to receive a digital badge that you can share with your network.
 
