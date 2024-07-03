@@ -1,0 +1,48 @@
+Enable the Dataplex API and set variables:
+gcloud services enable \
+  dataplex.googleapis.com 
+
+export PROJECT_ID=$(gcloud config get-value project)
+export REGION=europe-west1
+gcloud config set compute/region $REGION
+
+Create a lake:
+gcloud dataplex lakes create ecommerce \
+   --location=$REGION \
+   --display-name="Ecommerce" \
+   --description="Ecommerce Domain"
+
+Add a zone to your lake:
+gcloud dataplex zones create orders-curated-zone \
+    --location=$REGION \
+    --lake=ecommerce \
+    --display-name="Orders Curated Zone" \
+    --resource-location-type=SINGLE_REGION \
+    --type=CURATED \
+    --discovery-enabled \
+    --discovery-schedule="0 * * * *"
+
+
+Create a BigQuery dataset:
+bq mk --location=$REGION --dataset orders 
+
+Attach the BigQuery dataset to the zone:
+gcloud dataplex assets create orders-curated-dataset \
+--location=$REGION \
+--lake=ecommerce \
+--zone=orders-curated-zone \
+--display-name="Orders Curated Dataset" \
+--resource-type=BIGQUERY_DATASET \
+--resource-name=projects/$PROJECT_ID/datasets/orders \
+--discovery-enabled 
+
+Detach an asset:
+gcloud dataplex assets delete orders-curated-dataset --location=$REGION --zone=orders-curated-zone --lake=ecommerce 
+
+Delete a zone:
+gcloud dataplex zones delete orders-curated-zone --location=$REGION --lake=ecommerce
+
+Delete the lake:
+gcloud dataplex lakes delete ecommerce --location=$REGION
+
+
