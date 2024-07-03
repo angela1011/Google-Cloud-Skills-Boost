@@ -55,16 +55,14 @@ gcloud dataplex assets create orders-curated-dataset \
 ```bash
 gcloud dataplex assets delete orders-curated-dataset --location=$REGION --zone=orders-curated-zone --lake=ecommerce 
 ```
-
-## If prompted to confirm, enter Y.
+If prompted to confirm, enter Y.
 
 ## Delete a zone:
 
 ```bash
 gcloud dataplex zones delete orders-curated-zone --location=$REGION --lake=ecommerce
 ```
-
-## If prompted to confirm, enter Y.
+If prompted to confirm, enter Y.
 
 ## Delete the lake:
 
