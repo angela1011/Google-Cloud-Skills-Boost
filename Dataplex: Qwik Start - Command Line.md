@@ -3,8 +3,7 @@
 ## Enable the Dataplex API and set variables:
 
 ```bash
-gcloud services enable \
-  dataplex.googleapis.com 
+gcloud services enable dataplex.googleapis.com 
 export PROJECT_ID=$(gcloud config get-value project)
 export REGION=europe-west1
 gcloud config set compute/region $REGION
