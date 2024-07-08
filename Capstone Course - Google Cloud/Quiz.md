@@ -1,8 +1,9 @@
-# Capstone Course - Google Cloud Quiz
-# 總整課程 - Google Cloud 學程 課後測驗
+# Capstone Course - Google Cloud Quiz 總整課程 - Google Cloud 學程 課後測驗
 
 ## Which policy helps Google Cloud keep customer data private?
+```bash
 B. Google does not use customer data for advertising purposes
+```
 
 ## 2. What would provide near-unlimited availability of computing resources without requiring your organization to procure and provision new equipment?
 A. Public cloud
