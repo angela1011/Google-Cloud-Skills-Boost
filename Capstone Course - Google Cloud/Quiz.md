@@ -7,23 +7,32 @@ B. Google does not use customer data for advertising purposes
 ```
 
 ### 2. What would provide near-unlimited availability of computing resources without requiring your organization to procure and provision new equipment?
+```bash
 A. Public cloud
+```
 
 ### 3. Why is data stored in Google Cloud secure and private?
+```bash
 C. Data is encrypted by default
+```
 
 ### 4. An organization wants full control of their virtual machine infrastructure for a custom home-grown application with a product that autoscales and automatically updates.Which Google Cloud product or solution should the organization use?
+```bash
 C. Compute Engine
+```
 
 ### 5. An organization wants to add a new function to their application. They want to write the code and let the public cloud provider handle the infrastructure.Which infrastructure solution should they use?
-
+```bash
 C. Serverless computing
+```
 
 ### 6. An organization is looking for a solution to help them build applications using their preferred programming language and tools. They also want to minimize time spent on infrastructure management.What solution should the organization use?
+```bash
 A. Cloud Run
+```
 
-### 7. Your organization runs a distributed application in the Compute Engine virtual machines. Your organization needs redundancy, but it also needs extremely fast communication (less than 10 milliseconds) between the parts of the application in different virtual machines.
-Where should your organization locate this virtual machines?
+### 7. Your organization runs a distributed application in the Compute Engine virtual machines. Your organization needs redundancy, but it also needs extremely fast communication (less than 10 milliseconds) between the parts of the application in different virtual machines. 
+\ Where should your organization locate this virtual machines?
 
 B. In different zones within a single region
 
