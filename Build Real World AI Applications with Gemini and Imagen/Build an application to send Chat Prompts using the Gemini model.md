@@ -3,9 +3,10 @@
 ### Working with Generative AI
 ### Chat responses without using stream:
 
-Click File->New File to open a new file within the Code Editor.
+Click `File` -> `New File` to open a new file within the Code Editor.
 
 Copy and paste the provided code snippet into your file.
+
 ```bash
 import vertexai
 from vertexai.generative_models import GenerativeModel, ChatSession
@@ -31,7 +32,7 @@ prompt = "Why does it appear when it rains?"
 print(get_chat_response(chat, prompt))
 ```
 
-Click File->Save, enter SendChatwithoutStream.py for the Name field and click Save.
+Click `File` -> `Save`, enter `SendChatwithoutStream.py` for the Name field and click `Save`.
 
 Execute the Python file by clicking the triangle icon on the top-right corner of Code Editor or by running the below command inside the terminal within the Code Editor pane to view the output.
 
@@ -40,7 +41,9 @@ Execute the Python file by clicking the triangle icon on the top-right corner of
 ```
 
 ### Chat responses with using stream:
-Click File->New File to open a new file within the Code Editor.
+
+Click `File` -> `New File` to open a new file within the Code Editor.
+
 Copy and paste the provided code snippet into your file.
 
 ```bash
@@ -71,7 +74,7 @@ prompt = "Why does it appear when it rains?"
 print(get_chat_response(chat, prompt))
 ```
 
-Click File->Save, enter SendChatwithStream.py for the Name field and click Save.
+Click `File` -> `Save`, enter `SendChatwithStream.py` for the Name field and click `Save`.
 
 Execute the Python file by clicking the triangle icon on the top-right corner of Code Editor or by running the below command inside the terminal within the Code Editor pane to view the output.
 

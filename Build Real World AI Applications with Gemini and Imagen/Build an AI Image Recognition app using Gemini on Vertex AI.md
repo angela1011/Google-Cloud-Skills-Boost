@@ -2,9 +2,10 @@
 
 ### Working with Vertex AI Python SDK
 
-Click File->New File to open a new file within the Code Editor.
+Click `File` -> `New File` to open a new file within the Code Editor.
 
 Copy and paste the provided code snippet into your file.
+
 ```bash
 import vertexai
 from vertexai.generative_models import GenerativeModel, Part
@@ -40,7 +41,7 @@ response = generate_text(project_id, location)
 print(response)
 ```
 
-Click File->Save, choose genai.py for the Name field and click Save.
+Click `File` -> `Save`, choose `genai.py` for the Name field and click `Save`.
 
 Execute the Python file by clicking the triangle icon on the Code Editor or by invoking the below command inside the terminal within the Code Editor pane to view the output.
 

@@ -2,7 +2,7 @@
 
 ### Working with Generative AI
 
-Click File->New File to open a new file within the Code Editor.
+Click `File` -> `New File` to open a new file within the Code Editor.
 
 Copy and paste the provided code snippet into your file.
 
@@ -46,7 +46,7 @@ generate_image(
     )
 ```
 
-Click File->Save, choose GenerateImage.py for the Name field and click Save.
+Click `File` -> `Save`, choose `GenerateImage.py` for the Name field and click `Save`.
 
 Execute the Python file by clicking the triangle icon on the Code Editor or by invoking the below command inside the terminal within the Code Editor pane. This will generate a image file with name image.jpeg.
 
@@ -54,7 +54,7 @@ Execute the Python file by clicking the triangle icon on the Code Editor or by i
 /usr/bin/python3 /home/student/GenerateImage.py
 ```
 
-Now to view the generated image, Click EXPLORER > image.jpeg
+Now to view the generated image, Click `EXPLORER` -> `image.jpeg`
 
 Check my progress 
 

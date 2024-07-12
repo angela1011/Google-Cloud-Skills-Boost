@@ -3,7 +3,7 @@
 ```bash
 gcloud auth list
 ```
-Click Authorize.
+Click `Authorize`.
 ```bash
 gcloud config list project
 ```
@@ -42,7 +42,7 @@ const name = pubSubMessage.data
 console.log(`My Cloud Function: ${name}`);
 };
 ```
-Exit nano (Ctrl+x) and save (Y) the file.
+Exit nano `(Ctrl+x)` and save `(Y)` the file.
 
 ### Task 2. Create a Cloud Storage bucket
 ```bash
