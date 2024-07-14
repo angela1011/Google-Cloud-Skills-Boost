@@ -14,7 +14,7 @@ Click Check my progress 
 3. In the command line, enter in the following, replacing <YOUR_API_KEY> with the API key you copied from previously generated:
 
 ```bash 
-export API_KEY=AIzaSyDYcwwTSNuYs0sjw-oAYJcdu9nQ9kB8aXo
+export API_KEY=<YOUR_API_KEY>
 ```
 
 ### Task 2. Create your Speech-to-Text API request
