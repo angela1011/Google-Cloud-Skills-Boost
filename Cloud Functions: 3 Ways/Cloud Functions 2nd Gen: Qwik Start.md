@@ -171,4 +171,91 @@ gcloud functions logs read nodejs-storage-function \
 
 Check my progress 
 
+### Task 4. Create a Cloud Audit Logs function
+
+From the Navigation Menu, go to IAM & Admin > Audit Logs.
+
+Find the Compute Engine API and click the check box next to it. If you are unable to find the API, search it on next page.
+
+On the info pane on the right, check Admin Read, Data Read, and Data Write log types and click Save.
+
+Grant the default Compute Engine service account the eventarc.eventReceiver IAM role:
+```bash
+gcloud projects add-iam-policy-binding $PROJECT_ID \
+  --member serviceAccount:$PROJECT_NUMBER-compute@developer.gserviceaccount.com \
+  --role roles/eventarc.eventReceiver
+```
+
+Get the code
+Run the following code to clone the repo that contains the application:
+```bash
+cd ~
+git clone https://github.com/GoogleCloudPlatform/eventarc-samples.git
+```
+
+Navigate to the app directory:
+```bash
+cd ~/eventarc-samples/gce-vm-labeler/gcf/nodejs
+```
+
+Deploy
+Deploy the function with gcloud as before. Notice how the function is filtering on Audit Logs for Compute Engine insertions with the --trigger-event-filters flag:
+```bash
+gcloud functions deploy gce-vm-labeler \
+  --gen2 \
+  --runtime nodejs18 \
+  --entry-point labelVmCreation \
+  --source . \
+  --region $REGION \
+  --trigger-event-filters="type=google.cloud.audit.log.v1.written,serviceName=compute.googleapis.com,methodName=beta.compute.instances.insert" \
+  --trigger-location $REGION \
+  --max-instances 1
+```
+
+Check my progress
+
+Test
+From the Navigation Menu, go to Compute Engine > VM instances.
+
+Click Create Instance.
+
+Leave all of the fields as the default values and click Create.
+
+Verify using the following command:
+
+```bash
+gcloud compute instances describe instance-1 --zone ""
+```
+
+Check my progress
+
+Run the following command to delete the VM. Type Y when prompted to confirm.
+```bash
+gcloud compute instances delete instance-1 --zone ""
+```
+### Task 5. Deploy different revisions
+
+Create
+Run the following command to create the folder and files for the app and navigate to the folder:
+```bash
+mkdir ~/hello-world-colored && cd $_
+touch main.py
+touch requirements.txt
+```
+
+```bash
+
+```
+
+```bash
+
+```
+
+```bash
+
+```
+
+```bash
+
+```
 ## Congratulation!
