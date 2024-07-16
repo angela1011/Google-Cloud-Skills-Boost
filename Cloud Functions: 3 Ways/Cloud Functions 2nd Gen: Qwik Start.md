@@ -242,19 +242,178 @@ touch main.py
 touch requirements.txt
 ```
 
+Add the following code to the hello-world-colored/main.py file with a Python function that reads a color environment variable and responds back with Hello World in that background color:
 ```bash
+import os
 
+color = os.environ.get('COLOR')
+
+def hello_world(request):
+    return f'<body style="background-color:{color}"><h1>Hello World!</h1></body>'
 ```
 
+Deploy
+Deploy the first revision of the function with an orange background:
 ```bash
+COLOR=orange
+gcloud functions deploy hello-world-colored \
+  --gen2 \
+  --runtime python39 \
+  --entry-point hello_world \
+  --source . \
+  --region $REGION \
+  --trigger-http \
+  --allow-unauthenticated \
+  --update-env-vars COLOR=$COLOR \
+  --max-instances 1
+```
+Navigate to the Cloud Functions page in the Console and click the hello-world-colored function.
 
+On the top right of the page under Powered by Cloud Run click hello-world-colored.
+
+This will re-direct you to the Cloud Run service page.
+
+Click the Revisions tab and then select Edit & Deploy New Revision.
+
+Leave everything as default and scroll down and select Variables & Secrets tab and in Environment Variables section. Update the COLOR environment variable to yellow.
+
+Click Deploy.
+
+Check my progress
+
+### Task 6. Set up minimum instances
+
+Create
+Run the following command to create the folder and files for the app and navigate to the folder:
+```bash
+mkdir ~/min-instances && cd $_
+touch main.go
+touch go.mod
 ```
 
+Add the following code to the min-instances/main.go file. This Go service has an init function that sleeps for 10 seconds to simulate a long initialization. It also has a HelloWorld function that responds to HTTP calls:
 ```bash
+package p
 
+import (
+        "fmt"
+        "net/http"
+        "time"
+)
+
+func init() {
+        time.Sleep(10 * time.Second)
+}
+
+func HelloWorld(w http.ResponseWriter, r *http.Request) {
+        fmt.Fprint(w, "Slow HTTP Go in GCF 2nd gen!")
+}
 ```
 
+Add the following code to the min-instances/go.mod file. This specifies the module path and Go language version:
 ```bash
+module example.com/mod
 
+go 1.16
 ```
+
+Deploy
+Run the following command to deploy the first revision of the function with the default minimum instance value of zero:
+```bash
+gcloud functions deploy slow-function \
+  --gen2 \
+  --runtime go116 \
+  --entry-point HelloWorld \
+  --source . \
+  --region $REGION \
+  --trigger-http \
+  --allow-unauthenticated \
+  --max-instances 4
+```
+
+Test the function with this command:
+```bash
+gcloud functions call slow-function \
+  --gen2 --region $REGION
+```
+Set minimum instances
+
+Navigate to the Cloud Run page in the Console and click the slow-function service.
+
+Click the Revisions tab and then select Edit & Deploy New Revision.
+
+Under the Autoscaling section, set Minimum number of instances to 1 and Maximum number of instances to 4.
+
+Leave the rest of the fields as default and click Deploy.
+
+Test
+Test the function again:
+```bash
+gcloud functions call slow-function \
+  --gen2 --region $REGION
+```
+
+Check my progress 
+
+### Task 7. Create a function with concurrency
+
+Test without concurrency
+Run the following command to get the URL of the function and save it as an environment variable:
+```bash
+SLOW_URL=$(gcloud functions describe slow-function --region $REGION --gen2 --format="value(serviceConfig.uri)")
+```
+
+Use an open source benchmarking tool called hey to send 10 concurrent requests to the slow function. hey is already installed in Cloud Shell:
+```bash
+hey -n 10 -c 10 $SLOW_URL
+```
+
+Run the following command to delete the function. Type Y when prompted to confirm.
+```bash
+gcloud run services delete slow-function --region ""
+```
+
+Deploy
+Deploy a new function identical to the previous function. Once deployed, you will increase its concurrency:
+```bash
+gcloud functions deploy slow-concurrent-function \
+  --gen2 \
+  --runtime go116 \
+  --entry-point HelloWorld \
+  --source . \
+  --region $REGION \
+  --trigger-http \
+  --allow-unauthenticated \
+  --min-instances 1 \
+  --max-instances 4
+```
+
+Set concurrency
+
+From the Navigation Menu, go to Cloud Run.
+
+Click the slow-concurrent-function service.
+
+Click the Revisions tab and then select Edit & Deploy New Revision.
+
+Under the Resources section, set the CPU to 1.
+
+Under Requests, set the Maximum concurrent requests per instance to 100.
+
+Under Autoscaling, set the Maximum number of instances to 4.
+
+Leave the rest of the fields as default and click Deploy.
+
+Test with concurrency
+Once your function has deployed, run the following command to get the URL of the new function and save it as an environment variable:
+```bash
+SLOW_CONCURRENT_URL=$(gcloud functions describe slow-concurrent-function --region $REGION --gen2 --format="value(serviceConfig.uri)")
+```
+Now use hey to send 10 concurrent requests:
+```bash
+hey -n 10 -c 10 $SLOW_CONCURRENT_URL
+```
+
+Check my progress
+
 ## Congratulation!
