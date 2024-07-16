@@ -37,16 +37,16 @@ gcloud services enable \
 Check my progress 
 
 ### Task 2. Create an HTTP function
-Create
-Run the following command to create the folder and files for the app and navigate to the folder:
 
+`Create`
+Run the following command to create the folder and files for the app and navigate to the folder:
 ```bash
 mkdir ~/hello-http && cd $_
 touch index.js && touch package.json
 ```
-Click the Open Editor button on the toolbar of Cloud Shell. (You can switch between Cloud Shell and the code editor by using the Open Editor and Open Terminal icons as required, or click the Open in new window button to leave the Editor open in a separate tab).
+Click the Open `Editor` button on the toolbar of Cloud Shell. (You can switch between Cloud Shell and the code editor by using the Open Editor and Open Terminal icons as required, or click the Open in new window button to leave the Editor open in a separate tab).
 
-In the Editor, add the following code to the hello-http/index.js file that simply responds to HTTP requests:
+In the Editor, add the following code to the `hello-http/index.js` file that simply responds to HTTP requests:
 
 ```bash
 const functions = require('@google-cloud/functions-framework');
@@ -55,7 +55,7 @@ functions.http('helloWorld', (req, res) => {
   res.status(200).send('HTTP with Node.js in GCF 2nd gen!');
 });
 ```
-Add the following content to the hello-http/package.json file to specify the dependencies.
+Add the following content to the `hello-http/package.json` file to specify the dependencies.
 
 ```bash
 {
@@ -67,11 +67,10 @@ Add the following content to the hello-http/package.json file to specify the dep
   }
 }
 ```
-
-Deploy
-In Cloud Shell, run the following command to deploy the function:
 Check my progress 
 
+`Deploy`
+In Cloud Shell, run the following command to deploy the function:
 ```bash
 gcloud functions deploy nodejs-http-function \
   --gen2 \
@@ -84,9 +83,8 @@ gcloud functions deploy nodejs-http-function \
   --max-instances 1
 ```
 
-Test
+`Test`
 Test the function with the following command:
-
 ```bash
 gcloud functions call nodejs-http-function \
   --gen2 --region $REGION
@@ -94,7 +92,7 @@ gcloud functions call nodejs-http-function \
 
 ### Task 3. Create a Cloud Storage function
 
-Setup
+`Setup`
 To use Cloud Storage functions, first grant the pubsub.publisher IAM role to the Cloud Storage service account:
 
 ```bash
@@ -108,14 +106,14 @@ gcloud projects add-iam-policy-binding $PROJECT_ID \
   --role roles/pubsub.publisher
 ```
 
-Create
+`Create`
 Run the following command to create the folder and files for the app and navigate to the folder:
 ```bash
 mkdir ~/hello-storage && cd $_
 touch index.js && touch package.json
 ```
 
-Add the following code to the hello-storage/index.js file that simply responds to Cloud Storage events:
+Add the following code to the `hello-storage/index.js` file that simply responds to Cloud Storage events:
 ```bash
 const functions = require('@google-cloud/functions-framework');
 
@@ -125,7 +123,7 @@ functions.cloudEvent('helloStorage', (cloudevent) => {
 });
 ```
 
-Add the following content to the hello-storage/package.json file to specify the dependencies:
+Add the following content to the `hello-storage/package.json` file to specify the dependencies:
 ```bash
 {
   "name": "nodejs-functions-gen2-codelab",
@@ -137,7 +135,7 @@ Add the following content to the hello-storage/package.json file to specify the 
 }
 ```
 
-Deploy
+`Deploy`
 First, create a Cloud Storage bucket to use for creating events:
 ```bash
 BUCKET="gs://gcf-gen2-storage-$PROJECT_ID"
@@ -157,12 +155,13 @@ gcloud functions deploy nodejs-storage-function \
   --max-instances 1
 ```
 
-Test
+`Test`
 Test the function by uploading a file to the bucket:
 ```bash
 echo "Hello World" > random.txt
 gsutil cp random.txt $BUCKET/random.txt
 ```
+
 Run the following command. You should see the received CloudEvent in the logs:
 ```bash
 gcloud functions logs read nodejs-storage-function \
@@ -173,11 +172,11 @@ Check my progress
 
 ### Task 4. Create a Cloud Audit Logs function
 
-From the Navigation Menu, go to IAM & Admin > Audit Logs.
+From the `Navigation Menu`, go to `IAM & Admin` -> `Audit Logs`.
 
-Find the Compute Engine API and click the check box next to it. If you are unable to find the API, search it on next page.
+Find the `Compute Engine API` and click the `check box` next to it. If you are unable to find the API, search it on next page.
 
-On the info pane on the right, check Admin Read, Data Read, and Data Write log types and click Save.
+On the info pane on the right, check `Admin Read`, `Data Read`, and `Data Write log types` and click `Save`.
 
 Grant the default Compute Engine service account the eventarc.eventReceiver IAM role:
 ```bash
@@ -186,7 +185,7 @@ gcloud projects add-iam-policy-binding $PROJECT_ID \
   --role roles/eventarc.eventReceiver
 ```
 
-Get the code
+`Get the code`
 Run the following code to clone the repo that contains the application:
 ```bash
 cd ~
@@ -198,7 +197,7 @@ Navigate to the app directory:
 cd ~/eventarc-samples/gce-vm-labeler/gcf/nodejs
 ```
 
-Deploy
+`Deploy`
 Deploy the function with gcloud as before. Notice how the function is filtering on Audit Logs for Compute Engine insertions with the --trigger-event-filters flag:
 ```bash
 gcloud functions deploy gce-vm-labeler \
@@ -214,12 +213,12 @@ gcloud functions deploy gce-vm-labeler \
 
 Check my progress
 
-Test
-From the Navigation Menu, go to Compute Engine > VM instances.
+`Test`
+From the `Navigation Menu`, go to `Compute Engine` -> `VM instances`.
 
-Click Create Instance.
+Click `Create Instance`.
 
-Leave all of the fields as the default values and click Create.
+Leave all of the fields as the default values and click `Create`.
 
 Verify using the following command:
 
@@ -229,13 +228,13 @@ gcloud compute instances describe instance-1 --zone ""
 
 Check my progress
 
-Run the following command to delete the VM. Type Y when prompted to confirm.
+Run the following command to delete the VM. Type `Y` when prompted to confirm.
 ```bash
 gcloud compute instances delete instance-1 --zone ""
 ```
 ### Task 5. Deploy different revisions
 
-Create
+`Create`
 Run the following command to create the folder and files for the app and navigate to the folder:
 ```bash
 mkdir ~/hello-world-colored && cd $_
