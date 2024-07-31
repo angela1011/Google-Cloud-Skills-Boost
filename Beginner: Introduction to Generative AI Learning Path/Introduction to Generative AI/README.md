@@ -1,3 +1,3 @@
-# Beginner: Introduction to Generative AI Learning Path
+# Introduction to Generative AI
 
-This learning path provides an overview of generative AI concepts, from the fundamentals of large language models to responsible AI principles.
+This is an introductory level microlearning course aimed at explaining what Generative AI is, how it is used, and how it differs from traditional machine learning methods. It also covers Google Tools to help you develop your own Gen AI apps.
