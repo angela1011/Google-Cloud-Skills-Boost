@@ -1,6 +1,5 @@
-# Google Cloud Computing Foundations: Cloud Computing Fundamentals
-# So, what's the cloud anyway? 
-# Quiz
+# Google Cloud Computing Foundations: Cloud Computing Fundamentals: Quiz
+## So, what's the cloud anyway?
 
 1. Which service provides raw compute, storage, and network capabilities, organized virtually into resources that are similar to physical data centers?
 ```bash
