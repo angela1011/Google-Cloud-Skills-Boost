@@ -1,25 +1,33 @@
-# Google Cloud Computing Foundations: Cloud Computing Fundamentals
-# So, what's the cloud anyway? 
-# Quiz
+# Google Cloud Computing Foundations: Cloud Computing Fundamentals: Quiz
+## Use Google Cloud to build your apps
 
-1. Which service provides raw compute, storage, and network capabilities, organized virtually into resources that are similar to physical data centers?
+1. Which of these is a managed environment for deploying containerized apps?
 ```bash
-IaaS
+Google Kubernetes Engine
 ```
 
-2. Which is a fundamental attribute of cloud computing?
+2. Which of these is a lightweight, fully managed serverless execution environment for building and connecting cloud services?
 ```bash
-Customers get access to computing resources over the internet, from anywhere.
+Cloud Functions
 ```
 
-3. What is the fully automated, elastic third-wave cloud that consists of a combination of automated services and scalable data?
+3. Which compute service would be considered IaaS?
 ```bash
-Container-based architecture
+Compute Engine
 ```
 
-4. Where are Google Cloud resources deployed?
+4. What is the Compute Engine feature that allows VMs to be added to or subtracted from an application based on load metrics?
 ```bash
-Zone
+Autoscaling
+```
+
+5. Which of these is a managed compute platform that lets you run stateless containers through web requests or Pub/Sub events?
+```bash
+Cloud Run
+```
+6. Which App Engine environment is based on preconfigured container instances?
+```bash
+Standard environment
 ```
 
 ## Congratulation!

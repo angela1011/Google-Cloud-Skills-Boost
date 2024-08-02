@@ -1,25 +1,29 @@
-# Google Cloud Computing Foundations: Cloud Computing Fundamentals
-# So, what's the cloud anyway? 
-# Quiz
+# Google Cloud Computing Foundations: Cloud Computing Fundamentals: Quiz
+## Start with a platform
 
-1. Which service provides raw compute, storage, and network capabilities, organized virtually into resources that are similar to physical data centers?
+1. Which command line tool is part of the Cloud SDK?
 ```bash
-IaaS
+gsutil
 ```
 
-2. Which is a fundamental attribute of cloud computing?
+2. Which billing tool is designed to prevent the over-consumption of resources due to an error or a malicious attack?
 ```bash
-Customers get access to computing resources over the internet, from anywhere.
+Quotas
 ```
 
-3. What is the fully automated, elastic third-wave cloud that consists of a combination of automated services and scalable data?
+3. In the Google Cloud resource hierarchy, into which entity are resources organized?
 ```bash
-Container-based architecture
+Projects
 ```
 
-4. Where are Google Cloud resources deployed?
+4. Which project identifier does not need to be globally unique?
 ```bash
-Zone
+Project name
+```
+
+5. What is the purpose of APIs offered by various Google Cloud services?
+```bash
+APIs allow code to be written to control Google Cloud services.
 ```
 
 ## Congratulation!
