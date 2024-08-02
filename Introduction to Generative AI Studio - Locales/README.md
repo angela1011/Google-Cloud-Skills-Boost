@@ -1,0 +1,3 @@
+# Introduction to Generative AI Studio - Locales
+
+This course introduces Vertex AI Studio, a tool for prototyping and customizing generative AI models. Through immersive lessons, engaging demos, and a hands-on lab, you'll explore the generative AI workflow and learn how to leverage Vertex AI Studio for Gemini multimodal applications, prompt design, and model tuning. The aim is to enable you to unlock the potentials of these models in your projects with Vertex AI Studio.
