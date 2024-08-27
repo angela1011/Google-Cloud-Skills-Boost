@@ -40,6 +40,7 @@ B. In different zones within a single region
 ### 8. What's the recommended way to create backup data for VMs?
 ```bash
 ⚠️NOT B. Sync data between primary and replica VMs
+⚠️NOT C. Create cron job to upload data to Google Cloud Storage
 ```
 
 ### 9. Two VMs in the same VPC but different regions can communicate through internal IPs
