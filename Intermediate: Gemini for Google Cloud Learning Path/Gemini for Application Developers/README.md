@@ -1,4 +1,4 @@
-# Gemini for Application Developers: Quiz
+# Gemini for Application Developers
 
 In this course, you learn how Gemini, a generative AI-powered collaborator from Google Cloud, helps developers build applications. You learn how to prompt Gemini to explain code, recommend Google Cloud services, and generate code for your applications. Using a hands-on lab, you experience how Gemini improves the application development workflow.
 
