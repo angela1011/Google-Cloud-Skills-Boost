@@ -23,4 +23,15 @@ They can be expensive to train.
 LLMs can be used for many tasks, including:1) Writing2) Translating3) Coding4) Answering questions5) Summarizing text6) Generating creativecontent
 ```
 
+
+What is a benefit of using large language models (LLMs)?
+```bash
+They can generate human-quality text for tasks such as content creation, writing assistance, and automatic summarization.
+```
+
+What are some of the applications of LLMs?
+```bash
+LLMs can be used for many tasks, including writing, translating, and coding.
+```
+
 ## Congratulation!
