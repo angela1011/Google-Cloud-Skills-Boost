@@ -1,41 +1,9 @@
 ## Advanced: Generative AI for Developers Learning 
-## 02 Attention Mechanism
-1. What is the advantage of using the attention mechanism over a traditional recurrent neural network (RNN) encoder-decoder?
-```bash
-The attention mechanism lets the decoder focus on specific parts of the input sequence, which can improve the accuracy of the translation.
-```
-
-2. What is the name of the machine learning architecture that can be used to translate text from one language to another?
-```bash
-Encoder-decoder
-```
-
-3. What is the name of the machine learning technique that allows a neural network to focus on specific parts of an input sequence?
-```bash
-Attention mechanism
-```
-
-4.How does an attention model differ from a traditional model?
-```bash
-Attention models pass a lot more information to the decoder.
-```
-
-5. What is the advantage of using the attention mechanism over a traditional sequence-to-sequence model?
-```bash
-The attention mechanism lets the model focus on specific parts of the input sequence.
-```
-
-6. What is the purpose of the attention weights?
-```bash
-To assign weights to different parts of the input sequence, with the most important parts receiving the highest weights.
-```
-
-7. What are the two main steps of the attention mechanism?
-```bash
-Calculating the attention weights and generating the context vector
-```
 
 ## 03 Encoder-Decoder Architecture
+
+This course gives you a synopsis of the encoder-decoder architecture, which is a powerful and prevalent machine learning architecture for sequence-to-sequence tasks such as machine translation, text summarization, and question answering. You learn about the main components of the encoder-decoder architecture and how to train and serve these models. In the corresponding lab walkthrough, you’ll code in TensorFlow a simple implementation of the encoder-decoder architecture for poetry generation from the beginning.
+
 1. What is the purpose of the decoder in an encoder-decoder architecture?
 ```bash
 To generate the output sequence from the vector representation
@@ -142,26 +110,42 @@ To extract information from the image.
 ```
 
 ## 09 Responsible AI for Developers: Fairness & Bias
-
+# Introduction to Responsible AI
 1. Which statement accurately describes a Google AI principle?
 ```bash
-
+Be accountable to people.
 ```
 
 2. You have been asked to do a presentation to a stakeholder in your organization on the importance of responsible AI. As you are thinking through your key opening statement, what is the most appropriate statement you can make that describes the importance of having responsible AI?
 ```bash
-
+Responsible AI is important for our organization because it reduces overall harm that our products may inflict on underrepresented groups.
 ```
 3. As you think through the development of your AI product, your organization is looking to you to lead and guide the development team around responsible AI best practices. What is a key best practice the team should think through as they develop the AI product?
 ```bash
-
+When possible, the team should hold the capability to access raw data to investigate issues or unintended behaviors.
 ```
 
 4. The data scientist team in your company is working to implement an AI model to assist processing credit card applications. During testing, you notice that the model has inconsistent performance among different sub-group of applicants. What responsible AI best practice should the team apply to the model?
 ```bash
-
+Ensure the recommendation data the product is pulling from is fairly representative of the entire dataset.
+```
+# AI Fairness & Bias
+1. As a data scientist, you are tasked with identifying bias in training data in an effective way. Which of the tools below can be used to identify bias in data?
+```bash
+TensorFlow Data Validation, What-if Tool.
 ```
 
+2. 
+
+You have been asked to do a presentation in your organization on the importance of AI fairness and bias. As you are thinking through your key opening statement, what is the most appropriate statement you can make that explains why AI fairness is difficult?
+```bash
+Fairness is difficult because there are pre-existing biases, a variety of scenarios, no standard definition of fairness, and incompatibility of fairness metrics.
+```
+
+3. A researcher did an anonymous survey with students in a mixed-gender middle school to learn the health and diet patterns of middle school students in the entire country. What type of bias could it introduce?
+```bash
+Selection bias
+```
 
 ## 10 Responsible AI for Developers: Interpretability & Transparency
 
@@ -181,39 +165,36 @@ Understand model behaviors
 ```
 
 ## 11 Responsible AI for Developers: Privacy & Safety
-
+# Module 1: Quiz
 1. A customer is working with a large dataset of healthcare records to develop a diagnostic AI model. They want to ensure privacy of sensitive data, by restricting the contribution of specific data on the model during training. Which privacy-focused technique would be best for the customer?
 ```bash
-
+DP-SGD (Differentially Private - Stochastic Gradient Descent)
 ```
-
 
 2. In machine learning, privacy measures often introduce trade-offs with other important factors. Which of the following does NOT represent a typical trade-off?
 ```bash
 
+Privacy and Transparency
 ```
-
 
 3. You've applied various de-identification techniques to a customer dataset containing sensitive information before using it to train an AI model. Which of the following concepts should you use to evaluate the suitability of your de-identification techniques?
 ```bash
-
+Reversibility and referential integrity.
 ```
 
+# Module 2: Quiz
+1. Your manager asked you to lead a project to research the key considerations in AI safety and develop a failure mode catalog to assist evaluate safety in Generative AI products. Which of the following should not be included as a failure mode?
+```bash
+Citation
+```
 
+2. You want to embed the concept of safety into a pre-trained LLM by fine-tuning it. You have a dataset of prompts and pairs of possible answers, along with labels created by human safety evaluators indicating their preference for one answer over the other. Which technique is the most suitable for fine-tuning the LLM in this scenario?
+```bash
+Reinforcement Learning from Human Feedback (RLHF)
+```
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+3. You're pitching an AI-powered customer support solution to a potential client. Their company handles highly sensitive user information, and they have reservations about potential risks associated with AI systems. To address their concerns and win their trust, which key message about AI safety would be most effective to emphasize?
+```bash
+"Adherence to AI safety principles helps us build reliable systems that minimize unexpected errors, safeguarding your customer data."
+```
 
