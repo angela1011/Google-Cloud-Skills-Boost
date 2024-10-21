@@ -1,35 +1,4 @@
 ## Advanced: Generative AI for Developers Learning 
-
-## 03 Encoder-Decoder Architecture
-
-This course gives you a synopsis of the encoder-decoder architecture, which is a powerful and prevalent machine learning architecture for sequence-to-sequence tasks such as machine translation, text summarization, and question answering. You learn about the main components of the encoder-decoder architecture and how to train and serve these models. In the corresponding lab walkthrough, you’ll code in TensorFlow a simple implementation of the encoder-decoder architecture for poetry generation from the beginning.
-
-1. What is the purpose of the decoder in an encoder-decoder architecture?
-```bash
-To generate the output sequence from the vector representation
-To predict the next word in the output sequence
-```
-
-2. What are two ways to generate text from a trained encoder-decoder model at serving time?
-```bash
-Greedy search and beam search
-```
-
-3. What is the name of the machine learning architecture that takes a sequence of words as input and outputs a sequence of words?
-```bash
-Encoder-decoder
-```
-
-4. What is the purpose of the encoder in an encoder-decoder architecture?
-```bash
-To convert the input sequence into a vector representation
-```
-
-5. What is the difference between greedy search and beam search?
-```bash
-Greedy search always selects the word with the highest probability, whereas beam search considers multiple possible words and selects the one with the highest combined probability.
-```
-
 ## 04 Transformer Models and BERT Model
 
 1. BERT is a transformer model that was developed by Google in 2018. What is BERT used for?
@@ -107,6 +76,70 @@ COCO dataset
 6. What is the purpose of the encoder in an encoder-decoder model?
 ```bash
 To extract information from the image.
+```
+
+## 06 Introduction to Vertex AI Studio
+
+1. What is a prompt?
+```bash
+A prompt is the natural language request or instruction to guide a model to generate a desired output.
+```
+
+2. What is Vertex AI Studio?
+```bash
+A tool that lets you quickly test and customize generative AI models.
+```
+
+3. Which of the following is a type of prompt that allows a generative AI model to perform a task with only a few examples?
+```bash
+Few-shot prompt
+```
+
+4. What does Gemini multimodal do with Vertex AI Studio?
+```bash
+Gemini multimodal processes text, image, and video data, and generates text as output.
+```
+
+5. Which of the following is the best way to generate more creative or unexpected content by adjusting the model parameters in Vertex AI Studio?
+```bash
+Setting the temperature to a high value.
+```
+
+## 07 Vector Search and Embeddings 
+
+1. Which of the following is correct to compare between vector search and traditional keyword search?
+```bash
+Vector search addresses semantic similarity and is good at solving ambiguous queries, whereas traditional keyword search is good at solving precise queries.
+```
+
+2. What is the process of encoding text data into vectors called?
+```bash
+Generating text embeddings.
+```
+
+3. What is the general process to build a search application by using Vertex AI Vector Search?
+```bash
+Encode data to embeddings, build an index, and search results.
+```
+
+4. What are the two main techniques used by ScaNN (Scalable Approximate Nearest Neighbor) to improve search performance in vector search?
+```bash
+Space pruning and data quantization
+```
+
+5. What are the two main technical challenges that need to be addressed in order to implement vector search effectively?
+```bash
+Encoding and indexing
+```
+
+6. What is the main purpose of using distance metrics like dot product distance in vector search?
+```bash
+Measure the distance between vectors in terms of semantic similarity.
+```
+
+7. What is the main benefit of using vector search in RAG (retrieval-augmented generation) to address LLM (Large Language Models) hallucination?
+```bash
+It allows the LLM to access real-time information for fact-checking.
 ```
 
 ## 09 Responsible AI for Developers: Fairness & Bias
