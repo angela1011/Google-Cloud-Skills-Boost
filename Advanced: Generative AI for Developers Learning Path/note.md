@@ -1,23 +1,11 @@
 ## Advanced: Generative AI for Developers Learning 
 
-## 10 Responsible AI for Developers: Interpretability & Transparency
-
-1. Your manager is a strong advocate for responsible AI development. During a project review, they emphasize the importance of transparency and documentation around the dataset you're using and the resulting AI model. They want to know what steps you're taking to ensure this. Which of the following tools or techniques are you using to provide a clear understanding of your dataset and model?
-```bash
-Data card, Model card
-```
-
-2. You're working on an image classification model for identifying different types of clouds. During testing, you notice some strange results. The model seems to be focusing on irrelevant areas of the images (like background objects) instead of the actual cloud features. To understand why your model is behaving this way, which of the following tools or techniques would be the most helpful?
-```bash
-XRAI (eXplainable Region-based Artificial Intelligence)
-```
-
-3. As an AI engineering team manager, you're giving a presentation to explain why interpretability and transparency in AI development is important for engineers. Which of the following statements would be best to include in your slides?
-```bash
-Understand model behaviors
-```
-
 ## 11 Responsible AI for Developers: Privacy & Safety
+
+This course introduces important topics of AI privacy and safety. It explores practical methods and tools to implement AI privacy and safety recommended practices through the use of Google Cloud products and open-source tools.
+
+When you complete this course, you can earn the badge displayed here! View all the badges you have earned by visiting your profile page. Boost your cloud career by showing the world the skills you have developed!
+
 # Module 1: Quiz
 1. A customer is working with a large dataset of healthcare records to develop a diagnostic AI model. They want to ensure privacy of sensitive data, by restricting the contribution of specific data on the model during training. Which privacy-focused technique would be best for the customer?
 ```bash
@@ -51,3 +39,6 @@ Reinforcement Learning from Human Feedback (RLHF)
 "Adherence to AI safety principles helps us build reliable systems that minimize unexpected errors, safeguarding your customer data."
 ```
 
+## 12 Machine Learning Operations (MLOps) for Generative AI
+
+This course is dedicated to equipping you with the knowledge and tools needed to uncover the unique challenges faced by MLOps teams when deploying and managing Generative AI models, and exploring how Vertex AI empowers AI teams to streamline MLOps processes and achieve success in Generative AI projects.
