@@ -1,0 +1,5 @@
+# Introduction to Data Analytics on Google Cloud
+
+This introductory course explores the basics of data analysis, including collection, storage, exploration, visualization, and sharing. This course also introduces Google Cloud's data analytics tools and services. Through video lectures, demos, quizzes, and hands-on labs, this course demonstrates how to go from raw data to impactful visualizations and dashboards. Whether you already work with data and want to learn how to be successful on Google Cloud, or you’re looking to progress in your career, this course will help you get started.
+
+When you complete this course, you can earn the badge displayed here! View all the badges you have earned by visiting your profile page. Boost your cloud career by showing the world the skills you have developed!
