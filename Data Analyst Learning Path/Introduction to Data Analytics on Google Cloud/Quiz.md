@@ -1,5 +1,42 @@
-# Introduction to Data Analytics on Google Cloud
+# Quiz: Understand the data analytics lifecycle on Google Cloud
 
-This introductory course explores the basics of data analysis, including collection, storage, exploration, visualization, and sharing. This course also introduces Google Cloud's data analytics tools and services. Through video lectures, demos, quizzes, and hands-on labs, this course demonstrates how to go from raw data to impactful visualizations and dashboards. Whether you already work with data and want to learn how to be successful on Google Cloud, or you’re looking to progress in your career, this course will help you get started.
+1. Which product is a serverless data warehouse for storage and analytics?
+```bash
 
-When you complete this course, you can earn the badge displayed here! View all the badges you have earned by visiting your profile page. Boost your cloud career by showing the world the skills you have developed!
+```
+2. What type of data is used for machine learning?
+```bash
+
+```
+3. Select the correct steps in the data analytics lifecycle.
+```bash
+
+```
+4. Which Google Cloud product is a relational database used to establish relationships between information in multiple datatables?
+```bash
+
+```
+5. Data sources are connectors that let you do what with your data?
+```bash
+
+```
+
+# Quiz: Explore data and extract insights using BigQuery
+
+```bash
+
+```
+
+```bash
+
+```
+
+```bash
+
+```
+
+# Quiz: Making data-driven decisions using Looker
+
+```bash
+
+```
