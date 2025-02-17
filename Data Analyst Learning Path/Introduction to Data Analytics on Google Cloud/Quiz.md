@@ -23,14 +23,23 @@
 
 # Quiz: Explore data and extract insights using BigQuery
 
+1. What construct is used to reference a data table in a SQL query?
 ```bash
 
 ```
-
+2. BigQuery is two services in one. What are the two services?
 ```bash
 
 ```
+3. BigQuery is optimized for reading terabytes and petabytes of data. How can BigQuery read and handle large amounts of data?
+```bash
 
+```
+4. BigQuery is most efficient when working with data contained where?
+```bash
+
+```
+5. BigQuery is a fully managed data warehouse. What is a benefit of a data warehouse being fully managed?
 ```bash
 
 ```
