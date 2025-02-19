@@ -46,6 +46,23 @@
 
 # Quiz: Making data-driven decisions using Looker
 
+1. Which is a benefit of using Looker Studio to share data as opposed to Looker?
+```bash
+
+```
+2. You are exploring data in Looker, and you need to narrow the results of the query. Which should you use?
+```bash
+
+```
+3. You ran a query and have results showing year-over-year sales growth. What type of Looker Studio visualization would be best to display the data?
+```bash
+
+```
+4. You want to save your query results as a report. What is a report referred to in Looker?
+```bash
+
+```
+5. You want to send a report that shows task completion to your manager every Friday morning to give them visibility into your team’s productivity. What is the best approach for sending data on a regular cadence?
 ```bash
 
 ```
