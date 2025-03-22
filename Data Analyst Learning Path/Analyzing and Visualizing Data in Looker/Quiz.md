@@ -25,6 +25,11 @@
 
 ```
 
+6. You can access all Looker content contained within the “All folders” folder.
+```bash
+
+```
+
 # Module 2 Quiz
 ```bash
 
