@@ -68,9 +68,42 @@
 ```
 
 # Module 3 Quiz
+
+1. A data explorer end user must enter a dashboard-specific edit mode to add, remove or modify filters for a dashboard.
 ```bash
 
 ```
+
+2. What field types can data explorer end users select as filter criteria in a Look? Please choose the best answer.
+```bash
+
+```
+
+3. Any content added to a board moves to the location of that content in the board directory structure.
+```bash
+
+```
+
+4. What is one change a data explorer end user CANNOT make to a dashboard? Please choose the best answer.
+```bash
+
+```
+
+5. A data explorer end user must enter a Look-specific edit mode to add or edit a filter in a Look.
+```bash
+
+```
+
+6. What field types can data explorer end users select as filter criteria in a Looker dashboard? Please choose the best answer.
+```bash
+
+```
+
+7. What content CANNOT be added to a board? Please choose the best answer.
+```bash
+
+```
+
 # Module 4 Quiz
 ```bash
 
