@@ -105,6 +105,49 @@
 ```
 
 # Module 4 Quiz
+
+1. In the Edit table calculations dialog box, in which field will you actually write the coding for your new table calculation? Please choose the best answer.
+```bash
+
+```
+
+2. The four primary types of table calculations are: string, mathematical, logical, and date and time.
+```bash
+
+```
+
+3. To write a table calculation, you find the “Custom Fields” section of the field picker in an Explore, click on the “Add” menu popup, and then choose the “Table calculation” menu option.
+```bash
+
+```
+
+4. An offset calculation is a totally independent function type compared to a table calculation.
+```bash
+
+```
+
+5. What are the recommended Looker best practices on when to click the “Run” button, with respect to adding an offset calculation? Please choose the best answer.
+```bash
+
+```
+
+6. What type of table calculation would contain the substring() function in its coding? Please choose the best answer.
+```bash
+
+```
+
+```bash
+
+```
+
+```bash
+
+```
+
+```bash
+
+```
+
 ```bash
 
 ```
