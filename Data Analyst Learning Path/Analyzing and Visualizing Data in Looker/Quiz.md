@@ -136,21 +136,36 @@
 
 ```
 
+7. You can pivot your data using either dimensions or measures in Looker.
 ```bash
 
 ```
 
+8. Which is a key characteristic of table calculations? Please choose the best answer.
 ```bash
 
 ```
 
+9. If you pivoted your data by a dimension in Looker, what data in turn would be displayed? Please choose the best answer.
 ```bash
 
 ```
 
+10. To write an offset calculation in Looker, you select the “Offset calculation” menu option from the “Add” menu popup in the Custom Fields section of the field picker in your Explore.
 ```bash
 
 ```
+
+11. What are the general use cases for choosing to write a table calculation? Please choose the best answer.
+```bash
+
+```
+
+12. If you want to write an offset calculation to reference the values in a column to the left or right of a particular column for a rolling average when using a pivot table, which offset calculation type should you choose? Please choose the best answer.
+```bash
+
+```
+
 # Module 5 Quiz
 ```bash
 
