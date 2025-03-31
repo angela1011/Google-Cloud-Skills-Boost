@@ -167,10 +167,36 @@
 ```
 
 # Module 5 Quiz
+
+1. Data explorer end users create Looks from what part of the Looker platform? Please choose the best answer.
 ```bash
 
 ```
+
+2. A data explorer end user can create a dashboard in two ways from an Explore: the Save fanout menu option from the top right-hand gear menu in Explores and Looks, and the “Add to dashboard” link at the extreme right of a Look in the Details panel.
+```bash
+
+```
+
+3. Who can create new dashboards in Looker? Please choose the best answer.
+```bash
+
+```
+
+4. 
+
+A Look is essentially a visual data report designed to answer one specific question of your data.
+```bash
+
+```
+
 # Module 6 Quiz
+
+1. 
+```bash
+
+```
+
 ```bash
 
 ```
