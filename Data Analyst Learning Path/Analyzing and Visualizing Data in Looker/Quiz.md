@@ -183,9 +183,7 @@
 
 ```
 
-4. 
-
-A Look is essentially a visual data report designed to answer one specific question of your data.
+4. A Look is essentially a visual data report designed to answer one specific question of your data.
 ```bash
 
 ```
@@ -197,6 +195,27 @@ A Look is essentially a visual data report designed to answer one specific quest
 
 ```
 
+2. 
+```bash
+
+```
+
+3. 
+```bash
+
+```
+
+4. 
+```bash
+
+```
+
+5. 
+```bash
+
+```
+
+6. 
 ```bash
 
 ```
