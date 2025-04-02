@@ -190,32 +190,33 @@
 
 # Module 6 Quiz
 
-1. 
+1. End users can download a dashboard to their local computer as .csv, .zip, .pdf or .png file formats. 
 ```bash
 
 ```
 
-2. 
+2. Which of these options is NOT a sharing and scheduling method for Looks? Please choose the best answer.
 ```bash
 
 ```
 
-3. 
+3. All end users can see and follow all tile-level dashboard alerts if they so choose.
 ```bash
 
 ```
 
-4. 
+4. Which of these options is NOT a sharing and scheduling method for dashboards? Please choose the best answer.
 ```bash
 
 ```
 
-5. 
+5. What is the minimum number of numeric measures or table calculations in a tile’s visualization needed to support a tile-level dashboard alert? Please choose the best answer.
+
 ```bash
 
 ```
 
-6. 
+6. End users can download a Look to their local computer as .csv, .zip, .pdf or .png file formats.
 ```bash
 
 ```
