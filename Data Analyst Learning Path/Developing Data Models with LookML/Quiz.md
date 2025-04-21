@@ -47,37 +47,52 @@
 
 # Module 2 Quiz
 
-1. 
+1. User-defined dashboards are stored in version-controlled files associated with a project in a Git repository.
 ```bash
 
 ```
 
-2. 
+2. When you create a new LookML dashboard, what's the filename convention used? Please choose the best answer.
 ```bash
 
 ```
 
-3. 
+3. count computes a distinct count of the field in the SQL parameter.
 ```bash
 
 ```
 
-4. 
+4. Developers utilize the Looker modeling language (LookML) to define all but one of the following items. Which item would a LookML developer NOT define using LookML? Please choose the best answer.
 ```bash
 
 ```
 
-5. 
+5. Views correspond to Explores in the Looker platform.
 ```bash
 
 ```
 
-6. 
+6. Which of these scenarios is possible using LookML? Please choose the best answer.
 ```bash
 
 ```
 
-7. 
+7. Using LookML, developers can reference fields in other view files.
+```bash
+
+```
+
+8. Which option does NOT represent an example of a dimension? Please choose the best answer.
+```bash
+
+```
+
+9. The number dimension type is the default dimension type assigned by Looker to a newly created dimension.
+```bash
+
+```
+
+10. What is the definition of a measure in Looker? Please choose the best answer.
 ```bash
 
 ```
