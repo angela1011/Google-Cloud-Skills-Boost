@@ -99,37 +99,32 @@
 
 # Module 3 Quiz
 
-1. 
+1. Which of the following is required for symmetric aggregation to work in Looker? Please choose the best answer.
 ```bash
 
 ```
 
-2. 
+2. The usage and implementations of type: location is NOT dependent on a database’s dialect.
 ```bash
 
 ```
 
-3. 
+3. How many different relationship parameters exist for how tables relate to one another? Please choose the best answer.
 ```bash
 
 ```
 
-4. 
+4. An Explore can be created from either a single view or table, or a combination of two views.
 ```bash
 
 ```
 
-5. 
+5. A one-to-many type join can result in fanout if symmetric aggregates are not properly applied.
 ```bash
 
 ```
 
-6. 
-```bash
-
-```
-
-7. 
+6. What is the default type given to a filter if one is not defined by a LookML developer? Please choose the best answer.
 ```bash
 
 ```
