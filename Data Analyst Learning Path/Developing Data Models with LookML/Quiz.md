@@ -131,22 +131,22 @@
 
 # Module 4 Quiz
 
-1. 
+1. Where in the Looker user interface can someone best and most easily write SQL queries for a SQL derived table? Please choose the best answer.
 ```bash
 
 ```
 
-2. 
+2. Filter parameters can be used to apply filters to a native derived table using the same syntax as a filtered measure.
 ```bash
 
 ```
 
-3. 
+3.  Persistent derived tables remain stored within the Looker platform, just like other derived tables.
 ```bash
 
 ```
 
-4. 
+4. Which of these terms is NOT used to identify new tables or sub-selects in SQL? Please choose the best answer.
 ```bash
 
 ```
