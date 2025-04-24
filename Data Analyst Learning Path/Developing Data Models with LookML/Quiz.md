@@ -151,17 +151,52 @@
 
 ```
 
-5. 
+5. The LookML parameter explore_source corresponds to what part of a SQL query? Please choose the best answer.
 ```bash
 
 ```
 
-6. 
+6. In what language are native derived tables written? Please choose the best answer.
 ```bash
 
 ```
 
-7. 
+7. End users and LookML developers alike can create their own derived tables for their respective use cases.
+```bash
+
+```
+
+8. 
+```bash
+
+```
+
+9. 
+```bash
+
+```  
+
+10. 
+```bash
+
+```
+
+11. 
+```bash
+
+```
+
+12. 
+```bash
+
+```
+
+13. 
+```bash
+
+```
+
+14. 
 ```bash
 
 ```
