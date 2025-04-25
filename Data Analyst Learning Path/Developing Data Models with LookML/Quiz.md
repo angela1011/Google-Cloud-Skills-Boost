@@ -166,22 +166,24 @@
 
 ```
 
-8. 
+8. To what does a LookML developer add and apply a datagroup? Please choose the best answer.
 ```bash
 
 ```
 
 9. 
+
+Developers can successfully utilize derived tables to roll up user data to the month time level in order to track periods of (in)activity and analyze retention.
 ```bash
 
 ```  
 
-10. 
+10. An Explore MUST be utilized for its LookML code to construct a native derived table.
 ```bash
 
 ```
 
-11. 
+11. Developers create SQL derived tables by manually constructing SQL queries.
 ```bash
 
 ```
