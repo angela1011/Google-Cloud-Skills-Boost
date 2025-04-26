@@ -193,12 +193,12 @@ Developers can successfully utilize derived tables to roll up user data to the m
 
 ```
 
-13. 
+13. Developers can implement caching in Looker to improve speed of query results.
 ```bash
 
 ```
 
-14. 
+14. In what type of file contained within a LookML project would a LookML developer write code for a native derived table? Please choose the best answer.
 ```bash
 
 ```
