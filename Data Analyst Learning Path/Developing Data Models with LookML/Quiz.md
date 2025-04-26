@@ -188,7 +188,7 @@ Developers can successfully utilize derived tables to roll up user data to the m
 
 ```
 
-12. 
+12. What is the recommended naming convention for persistent derived tables? Please choose the best answer.
 ```bash
 
 ```
