@@ -171,9 +171,7 @@
 
 ```
 
-9. 
-
-Developers can successfully utilize derived tables to roll up user data to the month time level in order to track periods of (in)activity and analyze retention.
+9. Developers can successfully utilize derived tables to roll up user data to the month time level in order to track periods of (in)activity and analyze retention.
 ```bash
 
 ```  
