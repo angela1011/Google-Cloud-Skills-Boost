@@ -1,4 +1,4 @@
-# Quiz
+# Boost Productivity with Gemini in BigQuery - Quiz
 
 1. 
 ```bash
