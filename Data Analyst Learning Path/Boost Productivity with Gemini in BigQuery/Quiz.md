@@ -1,11 +1,11 @@
 # Boost Productivity with Gemini in BigQuery - Quiz
 
-1. 
+1. Which of the following is considered a best practice for prompting in BigQuery?
 ```bash
 
 ```
 
-2. 
+2. What does data canvas do in BigQuery?
 ```bash
 
 ```
