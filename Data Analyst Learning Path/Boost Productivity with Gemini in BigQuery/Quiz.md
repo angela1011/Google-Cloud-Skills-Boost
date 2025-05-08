@@ -10,12 +10,12 @@
 
 ```
 
-3. 
+3. What task does Insights perform in BigQuery?
 ```bash
 
 ```
 
-4. 
+4. Which statement is correct about using Gemini as code assistance in BigQuery?
 ```bash
 
 ```
